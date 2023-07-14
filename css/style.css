@@ -1,0 +1,555 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+:root{
+    --font-open-sans :'Open Sans', sans-serif;
+    --font-monserrat :'Montserrat', sans-serif;
+    --button :#ffb600;
+    --dark :#23282d;
+    --white : #ffff;
+    --light-dark : #5555;
+    --font-dark : #212121;
+    --light-gray : #ebebeb;
+    --bg-light :#f9f9f9;
+}
+html
+{
+    font-size: 62.5%;
+}
+body,
+p {
+  font-family: "Open Sans", sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased !important;
+  font-size: 1.5rem;
+}
+.p-tb{
+  padding: 7rem 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #212121;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+h1 {
+  font-size: 3.6rem;
+  line-height: 4.8rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+  line-height: 3.6rem;
+  text-transform: uppercase;
+  letter-spacing: -0.1px;
+}
+
+h3 {
+  font-size: 2.4rem;
+  margin-bottom: 2.0rem;
+  text-transform: uppercase;
+  letter-spacing: -0.05rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  text-transform: uppercase;
+  letter-spacing: -0.02rem;
+}
+
+h5 {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+}
+.header-1
+{
+    background-color: var(--light-gray);
+    font-size: 1.5rem;
+}
+button{
+  background-color: var(--button);
+  color: var(--white);
+  padding: 1.2rem 2.5rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  transition: all 0.5s ease;
+  font-size: 1.4rem;
+}
+button:hover{
+  background-color: var(--dark);
+  color: var(--button);
+}
+.logo{
+  height: 3.5rem;
+  width: auto;
+}
+.box-border
+{
+  border-right: 0.1rem solid rgba(35, 40, 45,0.2);
+}
+.header-3{
+  background-color: var(--dark);
+}
+.header-3 ul li a{
+  color: var(--white);
+}
+.header-3 ul li a:hover{
+  color: var(--button);
+}
+.header-3 ul li ol{
+  width: 18rem;
+  background-color: var(--white);
+  z-index: 11111;
+}
+.header-3 ul li ol::before{
+  position: absolute;
+  content: "";
+  height: 0.2rem;
+  width: 100%;
+  background-color: var(--button);
+  top: 0;
+  left: 0;
+}
+.header-3 ul li ol li a{
+  color: var(--dark);
+}
+.header-3 ul li{
+  position: relative;
+}
+.hover-navbar{
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
+.header-3 ul li:hover .hover-navbar{
+  opacity: 1;
+  visibility: visible;
+}
+.header-3 .sub-menu{
+  position: relative;
+}
+.header-3 .sub-menu-item{
+  position: absolute;
+  left: 100%;
+  top: 0;
+  opacity: 0;
+  transition: all 0.5s ease;
+  visibility: hidden;
+}
+.header-3 .nav-item .sub-menu:hover .sub-menu-item{
+  opacity: 1;
+  visibility: visible;
+}
+.glass{
+  color: var(--white) !important;
+}
+.navbar-toggler{
+  background-color: var(--button);
+  color: var(--white);
+}
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  z-index: 999999;
+}
+/* -----hero----- */
+.hero .carousel-item .carousel-caption h5,.hero .carousel-item .carousel-caption h2,.hero .carousel-item .carousel-caption button,.hero .carousel-item .carousel-caption a{
+  color: var(--white);
+}
+.hero .carousel-item .carousel-caption h2{
+  font-size: 5rem;
+}
+.carousel-caption{
+  top: 22.6rem;
+}
+.hero .carousel-item .carousel-caption a{
+  border: 1px solid var(--button);
+  padding: 1.2rem 2.5rem;
+  font-size: 1.4rem;
+  border-radius: 0.5rem;
+  transition: all 0.5s ease;
+}
+.hero .carousel-item .carousel-caption a:hover{
+  background-color: var(--button);
+}
+.carousel-caption-1 .carousel-caption
+{
+  left: 25.6rem;
+  text-align: left;
+}
+.carousel-caption-1 p{
+  background-color: var(--button);
+}
+.carousel-caption-2 .carousel-caption
+{
+  right: 25.6rem;
+  text-align: right;
+}
+.carousel-control-next, .carousel-control-prev{
+  height: 7rem;
+  width: 7rem;
+  top: 50%;
+  transition: all 0.5s ease;
+}
+.carousel-control-next:hover, .carousel-control-prev:hover{
+  background-color: var(--button);
+}
+.carousel-control-next{
+  right: 5rem;
+}
+.carousel-control-prev{
+  left: 5rem;
+}
+/* -----section-2----- */
+.section-2 .container{
+  background-color: var(--button);
+  position: absolute;
+  top: -5rem;
+  left: 0;
+  right: 0;
+}
+.section-2{
+  position: relative;
+}
+.section-2 p{
+  color: var(--white);
+  font-size: 1.8rem;
+}
+.section-2 a{
+  color: var(--white);
+  background-color: var(--dark);
+  padding: 1.2rem 2.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.5s ease;
+}
+.section-2 a:hover{
+  background-color: black;
+}
+/* -----about----- */
+.about i{
+  color: var(--button);
+  font-size: 3rem;
+}
+.about h3{
+  font-size: 3rem;
+}
+.about .accordion-button:not(.collapsed){
+  color: var(--button);
+}
+/* -----counter----- */
+.counter
+{
+  background-color: var(--dark);
+}
+.counter p{
+  color: var(--button);
+}
+.counter h2{
+  font-size: 4rem;
+  color: var(--white);
+}
+/* -----project----- */
+.project{
+  background-color: var(--bg-light);
+}
+.project .project-nav
+{
+  border-bottom: 0.2rem solid var(--button);
+}
+.project-nav ul li a{
+  color: var(--dark);
+}
+.project .project-image-content{
+  top: 40%;
+  left: -90%;
+  transition: all 0.5s ease;
+}
+.project .project-image-content h3{
+  color: var(--white);
+  transition: all 0.2s ease;
+}
+.project .project-image-content h3:hover{
+  color: var(--button);
+}
+.project .project-item:hover img{
+  transition: all 0.5s ease;
+}
+.project .project-item:hover img{
+  filter: brightness(0.4);
+  transform: scale(1.1);
+}
+.project .project-item:hover .project-image-content{
+  left: 0;
+}
+.project .project-pluse-btn{
+  background-color: var(--button);
+  color: var(--white);
+  width: 4rem;
+  height: 4rem;
+  line-height: 4rem;
+  transform: scale(0);
+  transition: all 0.5s ease;
+}
+.project .project-item:hover .project-pluse-btn{
+  transform: scale(1);
+}
+/* -----clients----- */
+.client .owl-carousel .owl-nav button.owl-next, .client .owl-carousel .owl-nav button.owl-prev{
+  display: none;
+}
+.client .row .img-box{
+  width: 8rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.client .row i{
+  font-size: 5rem;
+  color: var(--button);
+}
+.client .row .content-box h3{
+  color: var(--button);
+}
+.client .owl-theme .owl-dots .owl-dot.active span,.client .owl-theme .owl-dots .owl-dot:hover span{
+  background-color: var(--button);
+}
+.client .client-logo img{
+  border: 0.1rem solid var(--light-gray);
+  height: 120px;
+  filter: grayscale(1);
+}
+/* ------sign-up----- */
+.sign-up .sign-up-yellow{
+  background-color: var(--button);
+}
+.sign-up h3,.sign-up h4,.sign-up p{
+  color: var(--white);
+}
+.sign-up input{
+  background-color: var(--dark);
+  width: 60%;
+}
+.sign-up .black{
+  background-color: var(--dark);
+  position: relative;
+}
+.yellow{
+  background-color: var(--button);
+}
+/* -----footer----- */
+.footer{
+  background-color: black;
+}
+.footer img{
+  width: 200px;
+}
+.footer h2{
+  color: var(--white);
+}
+.footer ul li a{
+  color: #6C757D;
+  transition: all 0.5s ease;
+}
+.footer ul li:hover a{
+  color: var(--button);
+}
+.footer-copy{
+  background-color: var(--button);
+}
+.footer-copy a{
+  color: var(--dark);
+  transition: all 0.5s ease;
+}
+.footer-copy .d-flex a:hover{
+  color: var(--white);
+}
+footer h2{
+  border-left: 0.3rem solid var(--button);
+  padding: 0 0.5rem;
+}
+/* -----top----- */
+.top{
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--dark);
+  line-height: 4rem;
+  position: fixed;
+  bottom: 5rem;
+  border-radius: 1rem;
+  right: 5rem;
+}
+.top a{
+  color: var(--button);
+  transition: all 0.5s ease;
+}
+.top:hover a{
+  color: var(--white);
+}
+/* ----------home two---------- */
+.hero .home-two-hero-box{
+    max-width: 65rem;
+    background-color: rgba(0,0,0,0.5); 
+}
+.hero .home-two-hero-box h6,.hero .home-two-hero-box h1{
+  color: var(--white);
+}
+/* ----------home-section-2---------- */
+.home-section-2{
+  background-color: var(--dark);
+}
+.home-section-2 h2{
+  color: var(--white);
+}
+/* ----------.home-section-2---------- */
+.home-section-3 h2{
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+.home-section-3 h2:hover{
+  color: var(--button);
+}
+.home-section-3 a{
+  transition: all 0.5s ease;
+  color: var(--font-dark);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+.home-section-3 a:hover{
+  color: var(--button);
+}
+/* ----------ABOUT US---------- */
+.bg-about-us{
+  background-image: url(../image/banner1.jpg);
+}
+.bg-about-us h1,.bg-about-us h5{
+  color: var(--white);
+  font-size: 5rem;
+}
+/* ----------who-we-are---------- */
+.who-we-are-box{
+  border-left: 0.2rem solid var(--button);
+  background-color: var(--light-gray);
+  padding-left: 0.2rem;
+}
+.who-we-are-box i{
+  font-size: 4rem;
+}
+.who-we-are h1{
+  color: var(--white);
+  background-color: var(--dark);
+  top: -50%;
+}
+.who-we-are .carousel-control-next,.who-we-are .carousel-control-prev{
+  height: 6rem;
+  width: 4rem;
+  top: 40%;
+}
+.who-we-are .carousel-control-next{
+  right: 0;
+}
+.who-we-are .carousel-control-prev{
+  left: 0;
+}
+/* ----------professional---------- */
+.professional .professional-box h4{
+  color: var(--button);
+}
+.professional .professional-box{
+  background-color: rgba(33, 33, 33,0.7);
+  color: var(--white);
+  top: 75%;
+  height: 100%;
+  transition: all 0.5s  ease;
+  -webkit-transition: all 0.5s  ease;
+  -moz-transition: all 0.5s  ease;
+  -ms-transition: all 0.5s  ease;
+  -o-transition: all 0.5s  ease;
+}
+.professional .item:hover .professional-box{
+  top: 0;
+}
+.professional .owl-theme .owl-dots .owl-dot span{
+  display: none;
+}
+.professional .owl-carousel .owl-nav button.owl-next,.professional .owl-carousel .owl-nav button.owl-prev{
+  height: 3rem;
+  width: 3rem;
+  font-size: 2rem;
+  background-color: var(--light-dark);
+}
+.professional .owl-theme .owl-nav [class*=owl-]:hover{
+  background-color: var(--button);
+}
+/* -----people-said-box----- */
+.people-said-box{
+  border: 0.1rem solid var(--button);
+  position: relative;
+}
+.people-said-box::before{
+  position: absolute;
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  border-right: 0.1rem solid var(--button);
+  border-bottom: 0.1rem solid var(--button);
+  background-color: var(--white);
+  bottom: -1.9rem;
+  left: 50%;
+  transform: rotate(45deg) translatex(-50%);
+  -webkit-transform: rotate(45deg) translatex(-50%);
+  -moz-transform: rotate(45deg) translatex(-50%);
+  -ms-transform: rotate(45deg) translatex(-50%);
+  -o-transform: rotate(45deg) translatex(-50%);
+}
+.people-said h3{
+  color: var(--button);
+}
+/* -----genral----- */
+.genrel .accordion-button::after{
+  content: none;
+}
+.genrel .recent p:hover{
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+.genrel .recent p:hover{
+  color: var(--button);
+}
+.packages h3{
+font-size: 4rem;
+}
+.packages .packages-bg-1{
+background-color: var(--dark);
+}
+.packages .packages-bg-1 h5,.packages .packages-bg-1 h4,.packages .packages-bg-1 h3{
+color: var(--white);
+}
+.packages .packages-bg-light{
+  background-color: var(--light-gray);
+}
+.packages .packages-bg-2{
+  background-color: var(--button);
+}

@@ -1,0 +1,36 @@
+@media (max-width : 575px) {
+    html{
+        font-size: 45%;
+    }
+    .box-border{
+        border: none;
+    }
+}
+@media (min-width : 576px) and (max-width : 767px) {
+    html{
+        font-size: 50%;
+    }
+    .box-border{
+        border: none;
+    }
+}
+@media (min-width : 768px) and (max-width : 991px) {
+    html{
+        font-size: 55%;
+    }
+}
+@media (min-width : 992px) and (max-width : 1199px) {
+    html{
+        font-size: 60%;
+    }
+}
+@media (min-width : 1200px) and (max-width : 1399px) {
+    html{
+        font-size: 65%;
+    }
+}
+@media (min-width : 1400px) {
+    html{
+        font-size: 70%;
+    }
+}
